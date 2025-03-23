@@ -1,7 +1,15 @@
-"Deshmukh":
+"deshmukh":
   - firstname: ["Jyotirmoy", "J.", "J. V.", "Jyotirmoy V."]
     url: https://jdeshmukh.github.io
 
-"Nikolaidis":
+"nikolaidis":
   - firstname: ["Stefanos", "S."]
     url: http://stefanosnikolaidis.net
+
+"belta":
+  - firstname: ["Calin", "C."]
+    url: https://calinbelta.com/
+
+"baras":
+  - firstname: ["John", "John S.", "J.", "J. S."]
+    url: https://johnbaras.com/
