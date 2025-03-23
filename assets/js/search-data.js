@@ -41,32 +41,32 @@ ninja.data = [{
           title: 'The Docks',
           description: "EP on Recorded Things",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/docks_ep/";
+              window.location.href = "/projects/music/docks_ep.html";
             },},{id: "projects-imitation",
           title: 'Imitation',
           description: "label debut with EP",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/imitation_ep/";
+              window.location.href = "/projects/music/imitation_ep.html";
             },},{id: "projects-sampler-two",
           title: 'Sampler Two',
           description: "Recorded Things 2024 VA",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/rect2024_sampler_two_va/";
+              window.location.href = "/projects/music/rect2024_sampler_two_va.html";
             },},{id: "projects-shallow-mind",
           title: 'Shallow Mind',
           description: "my first album/LP",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/shallow_mind_lp/";
+              window.location.href = "/projects/music/shallow_mind_lp.html";
             },},{id: "projects-wasp",
           title: 'Wasp',
           description: "my first EP",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/wasp_ep/";
+              window.location.href = "/projects/music/wasp_ep.html";
             },},{id: "projects-tennis",
           title: 'Tennis',
           description: "about my tennis career",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/tennis/";
+              window.location.href = "/projects/tennis.html";
             },},{
         id: 'social-github',
         title: 'GitHub',
