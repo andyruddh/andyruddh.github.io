@@ -22,14 +22,23 @@
 }
 
 @inproceedings{bt2automata,
-	abbr={Conference},
-	bibtex_show={true},
-	author = {Matheu, Ryan and Puranic, Aniruddh G. and Baras, John S. and Belta, Calin},
-	title = {BT2Automata: Expressing Behavior Trees as Automata for Formal Control Synthesis},
-	year = {2025},
-	booktitle = {Proceedings of the 28th ACM International Conference on Hybrid Systems: Computation and Control (HSCC) -- Accepted},
-	url = {https://doi.org/10.1145/3716863.3718042},
-  	doi = {10.1145/3716863.3718042},
+abbr={Conference},
+bibtex_show={true},
+author = {Matheu, Ryan and Puranic, Aniruddh G. and Baras, John S. and Belta, Calin},
+title = {BT2Automata: Expressing Behavior Trees as Automata for Formal Control Synthesis},
+year = {2025},
+isbn = {9798400715044},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3716863.3718042},
+doi = {10.1145/3716863.3718042},
+abstract = {This research presents a novel approach to bridging the gap between the interpretable and flexible nature of Behavior Trees (BTs) and the rigorous formal verification and synthesis capabilities of temporal logics. Temporal logics, such as Linear Temporal Logic (LTL) and Metric Interval Temporal Logic (MITL), are widely used for task specification due to their intuitive syntax for expressing temporally evolving behaviors. However, encoding complex task dependencies and recovery actions in temporal logic can lead to intractability. BTs, known for their modular structure and dynamic adaptability, have gained popularity in robotics for task specification. Despite the advantages of BTs, their flexible structure complicates formal analysis for safety and performance guarantees, limiting their use in control synthesis. This work presents a novel approach by translating BTs into Timed Automata (TA), thus enabling falsification (counterexample generation) with Uppaal to identify inconsistencies and ensure language completeness, especially when defined with timing constraints. This integration allows for the detection of potential inconsistencies, the monitoring of temporal properties, and the synthesis of automaton and sampling based control strategies that guarantee satisfaction of task objectives.},
+booktitle = {Proceedings of the 28th ACM International Conference on Hybrid Systems: Computation and Control},
+articleno = {13},
+numpages = {11},
+keywords = {C},
+location = {Irvine, CA, USA},
+series = {HSCC '25}
 }
 
 @INPROCEEDINGS{PDN_ALSTL,
@@ -187,3 +196,43 @@ keywords = {demonstrations, temporal logic, reward inference, imitation, reinfor
 location = {Milan, Italy},
 series = {HSCC '22}
 }
+
+@patent{patent_usc,
+ abbr={Patent},
+ title={System and method for robot learning from human demonstrations with formal logic},
+ author={Puranic, Aniruddh G. and Deshmukh, Jyotirmoy V. and Nikolaidis, Stefanos},
+ year={2025},
+ number={12208521},
+ note = {U.S. Patent 12,208,521},
+ type={patentus},
+ }
+
+ @patent{toyota_I1,
+ abbr={Patent},
+ title={Distributed systems and extracting configurations for edge servers using driving scenario awareness},
+ author={Puranic, Aniruddh G. and Kim, BaekGyu},
+ year={2022},
+ number={11394612},
+ type={patentus},
+ note = {U.S. Patent 11,394,612},
+ }
+
+  @patent{toyota_I2,
+  abbr={Patent},
+ title={Methods and systems for processing traffic data from vehicles},
+ author={Puranic, Aniruddh G. and Kim, BaekGyu and Nakamura, Akihito},
+ year={2021},
+ number={Application 16548221 -- Pending},
+ note = {U.S. Patent Application 16,548,221 -- Pending},
+ type={patentus},
+ }
+
+ @patent{toyota_I3,
+ abbr={Patent},
+ title={Extracting temporal specifications of features for functional compatibility and integration with oems},
+  author={Puranic, Aniruddh G. and Kim, BaekGyu and Nakamura, Akihito},
+ year={2025},
+ number={12307173},
+ type={patentus},
+ note = {U.S. Patent 12,307,173},
+ }

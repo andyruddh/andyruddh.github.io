@@ -38,19 +38,33 @@ toc:
     Left: Reward modeling and prediction via Gaussian processes and deep neural networks. Right: Extracted specification-consistent behaviors in simulations, including Nvidia Isaac.
 </div>
 
+##### _Modeling and control synthesis for long-horizon tasks using Temporal Behavior Trees_
+
+This work addresses the limitations of long-horizon, myopic reinforcement learning by combining the adaptability of Behavior Trees (BTs) with the formal rigor of temporal logics. While temporal logics enable precise task specification, they struggle with complex dependencies. BTs offer modularity and flexibility but lack formal guarantees. By translating BTs into Timed Automata, this approach enables formal verification, inconsistency detection, and control synthesis using UPPAAL, ensuring robust, time-aware task execution.
+
+###### **References**
+
+- {% reference bt2automata %}
+- {% reference omtbt %}
+
 ##### _Learning reward functions and control policies that satisfy temporal-logic specifications_
 
-Designing dense or "informative" reward functions for Reinforcement Learning (RL) is a highly non-trivial task. Errors in reward design can lead to unsafe and undesirable learned control behaviors. This work introduces a neurosymbolic learning-from-demonstrations (LfD) framework that uses high-level tasks expressed in Signal Temporal Logic (STL), and user demonstrations to extract reward functions and control policies via reinforcement learning. The LfD-STL framework enables an agent to learn non-Markovian/temporal rewards and overcome critical issues (safety and performance) with inverse reinforcement learning methods. The initial development of the framework was applied to discrete and deterministic environments, and was later generalized to continuous spaces and stochastic environments via Gaussian Processes and neural-network modeling.
+Designing effective reward functions in reinforcement learning (RL) is challenging and error-prone, often leading to unsafe behaviors. This work presents a neurosymbolic learning-from-demonstrations (LfD) framework that leverages Signal Temporal Logic (STL) and user demonstrations to derive temporal reward functions and control policies. Unlike traditional inverse RL, this approach captures non-Markovian rewards and enhances safety and performance. Initially developed for discrete environments, the framework was later extended to continuous and stochastic settings using Gaussian Processes and neural networks.
+
+###### **References**
+
+- {% reference PDN23 %}
+- {% reference PDN21 %}
+- {% reference PDN20 %}
 
 ##### _Learning to improve/extrapolate beyond demonstrator performance_
 
-Generally, a machine learning model's performance is determined by the quality and amount of data it is trained on. Thus, noisy data and limited human demonstrations, which is widely observed in robotic settings, poses a challenge to learn optimal behaviors. This work on neuro-symbolic apprenticeship learning implements temporal logic-guided reinforcement learning from demonstrations to automatically improve robot safety and performance via self-monitoring and adaptation. The capabilities of the framework are exhibited on a variety of mobile navigation, fixed-base manipulation and mobile-manipulation tasks using the **Nvidia Isaac** simulator. This paper is published in the proceedings of IROS 2024. Additional details can be found on the [supplemental document](https://aniruddh-puranic.info/assets/pdf/alstl_supp.pdf).
+Machine learning performance relies heavily on data quality and quantity, making noisy or limited demonstrations a challenge in robotics. This work proposes neuro-symbolic apprenticeship learning, using temporal logic-guided reinforcement learning to enable robots to self-monitor and adapt for improved safety and performance. The capabilities of the framework are exhibited on a variety of mobile navigation, fixed-base manipulation and mobile-manipulation tasks using the **Nvidia Isaac** simulator. This paper is published in the proceedings of IROS 2024. Additional details can be found on the [supplemental document](https://aniruddh-puranic.info/assets/pdf/alstl_supp.pdf).
 
 ###### **References**
 
 - {% reference PDN_ALSTL %}
-- {% reference PDN21 %}
-- {% reference PDN20 %}
+- {% reference PDN23 %}
 
 #### **INTERPRETABLE/EXPLAINABLE AI (xAI)**
 
@@ -73,7 +87,7 @@ Generally, a machine learning model's performance is determined by the quality a
 
 ##### _Generating explainable temporal logic graphs from human data_
 
-Understanding and evaluating the human demonstrations and learned robot behaviors plays a critical role in optimizing the control policies for robots, without which, a robot may infer incorrect reward functions that lead to undesirable or unsafe control policies. The prior LfD-STL required the demonstrators to explicitly specify their preferences by ranking the STL specifications. The ranked specifications were represented by a directed acyclic graph (DAG) to capture the preferences and dependencies. To relax this manual burden, we automatically infer the specification DAG from demonstrations via our novel Performance Graph Learning (PeGLearn). PeGLearn facilitates explainability for AI-based systems via a user study on CARLA, a simulated driving environment. We also integrate human feedback (annotations) in a robot-assisted surgical domain to model behaviors of surgeons according to their expertise. Additional details can be found on the [supplemental document](https://aniruddh-puranic.info/assets/pdf/peglearn_supp.pdf).
+Evaluating human demonstrations is key to learning safe, effective robot policies. Prior LfD-STL methods required manual ranking of STL specifications, represented as a DAG. To reduce this burden, we introduce Performance Graph Learning (PeGLearn), which automatically infers the DAG from demonstrations. PeGLearn enhances explainability, validated via a CARLA driving study, and models surgeon behavior using human feedback in a surgical domain.Additional details can be found on the [supplemental document](https://aniruddh-puranic.info/assets/pdf/peglearn_supp.pdf).
 
 ##### _Learning (mining) specifications from temporal data_
 
@@ -103,7 +117,7 @@ Autonomous cyber-physical systems such as self-driving cars, unmanned aerial veh
 
 ##### _Evaluating the quality of vision-based perception algorithms_
 
-Computer vision is one of the major perception components of a cyber-physical system with numerous applications in autonomous vehicles, industrial/factory robotics, medical devices, etc. Checking the correctness and ensuring robustness of perception algorithms such as those based on deep convolutional neural networks is a major challenge. Conventionally, perception algorithms are tested by comparing their performance to ground truth labels, that require a laborious annotation process. We propose the use of Timed Quality Temporal Logic (TQTL) as a formal language to express desirable spatio-temporal properties of a perception algorithm processing a video, offering an alternative metric that can provide useful information, even in the absence of ground truth labels.
+Computer vision is vital for cyber-physical systems, but ensuring the robustness of deep learning-based perception is challenging. Traditional testing relies on ground truth labels, which are labor-intensive to obtain. This work introduces Timed Quality Temporal Logic (TQTL) to formally specify spatio-temporal properties of perception algorithms, enabling evaluation without ground truth.
 
 ##### _Vision-based metric for evaluating surgeon's performance_
 

@@ -16,4 +16,8 @@
 
 "Dissertation":
   url: https://digitallibrary.usc.edu/asset-management/2A3BF1M106B1V
-  color: "#990000"
+  color: "#C70039"
+
+"Patent":
+  url: ""
+  color: "#581845"
